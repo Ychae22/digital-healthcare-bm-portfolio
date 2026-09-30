@@ -1,74 +1,67 @@
-# 🏥 채유진 디지털 헬스케어 포트폴리오 (Digital Healthcare Web Portfolio)
+# 🌟 채유진 헬스케어 BM 포트폴리오 (Healthcare Brand Manager Portfolio)
 
-> **일상 속 건강한 변화를 이끌어내는 디지털 헬스케어 기획자, 채유진의 인터랙티브 웹 포트폴리오입니다.**  
-> 분자생물학 기반의 임상 도메인 전문성과 Vision AI / ML 모델링 역량을 융합한 헬스케어 솔루션 프로젝트를 소개합니다.
-
----
-
-## 🌟 주요 특징 (Key Highlights)
-
-- **Dual View 지원**:
-  - **웹 포트폴리오 모드 (Scroll View)**: 채용 담당자가 모바일 및 PC에서 편리하게 탐색할 수 있는 모던 인터랙티브 웹사이트
-  - **슬라이드 프레젠테이션 모드 (Deck View)**: 원본 PPT처럼 슬라이드를 넘기며 발표할 수 있는 전체 화면 모드 (방향키/스페이스바 지원)
-- **16개 실제 프로젝트 고화질 스크린샷 수록 & 라이트박스 확대 뷰어 제공**
-- **반응형 웹 디자인**: 모바일, 태블릿, 데스크톱 모든 디바이스에 최적화
-- **GitHub Pages 즉시 배포 가능**: 복잡한 빌드/설치 과정 없이 GitHub 저장소에 업로드만 하면 무료 호스팅 연결
+> **"데이터와 손익 감각으로 비즈니스 임팩트를 창출하는 헬스케어 브랜드 매니저, 채유진입니다."**  
+> 분자생물학 기반의 헬스케어 도메인 전문성, 정량적 시장·타깃 데이터 분석력, 그리고 타깃 원가율(P&L) 구조화 및 프로모션 기획력을 결합하여 제품의 지속 가능한 성장을 견인합니다.
 
 ---
 
-## 📂 프로젝트 구조
+## 🎯 핵심 차별화 역량 (Core BM Competencies)
 
-```
-digital-healthcare-portfolio/
-├── index.html            # 메인 웹 포트폴리오 & 프레젠테이션 통합 페이지
-├── style.css             # 모던 UI 스타일, 글래스모피즘 & 애니메이션
-├── app.js                # 인터랙티브 컨트롤러, 뷰 모드 전환, 라이트박스
-├── DEPLOY_GUIDE.md       # GitHub Pages 1분 무료 배포 가이드
-├── README.md             # 프로젝트 소개 문서
-└── assets/
-    └── images/           # 프로젝트 고해상도 스크린샷 에셋 (16장)
-        ├── image1.png ~ image7.png   # MediSore UI/기능
-        ├── image8.png ~ image9.png   # 힐링레터 UI/리포트
-        ├── image10.png ~ image12.png # Heimlich Hero 게임 화면
-        └── image13.png ~ image16.png # 환장연애 플랫폼 화면
-```
+1. **의료·바이오 도메인 전문성**: 부산대학교 분자생물학과 졸업. 인체 생리, 성분 배합, 원료 기전(USP) 분석 및 소비자 소구점 전환
+2. **Data-Driven 시장 & 타깃 분석**: 키워드 쿼리량, 성별·연령 인구통계 데이터 분석을 통한 정량적 가설 수립 및 차별화 공식 도출
+3. **수익성 & 원가 구조화 (P&L 감각)**: 공구가격/프로모션가 구조 이해, 타깃 원가율(10~20%대) 엄수 및 번들링을 통한 마진 방어
+4. **비즈니스-고객 동기 일치 (Alignment)**: 회사의 당면 과제(과재고 소진, 매출 부스팅)와 고객의 구매 동기를 정밀하게 일치시키는 기획력
+5. **퍼널 & CRM 전환 최적화 (CVR)**: VVIP 시크릿 초대장, 타임어택/마퀴 애니메이션, 피그마 기반 상세페이지 설계를 통한 구매 전환 극대화
+6. **크로스펑셔널(부서 간) 실행력**: R&D 샘플링, OEM 생산 공장 이슈, 마케팅/디자인 협업 시 정밀한 회의록 및 액션 아이템 리딩
 
 ---
 
-## 🚀 프로젝트 구성 내용
+## 📂 포트폴리오 프로젝트 구성
 
-### 1. Core Competencies (6대 핵심 강점)
-1. **의료·보건 도메인 전문성**: 분자생물학 학사, GCP 수료, 영문 의학 논문 분석 및 IRB/데이터 무결성 이해
-2. **Data Literacy**: 사용자 데이터 추출·분석, ERP 데이터 QC 기반 의사결정
-3. **초고령화 시대 페인포인트 포착**: 실시간 욕창 관리(MediSore), 파킨슨 선별 등 시니어 헬스케어 기획
-4. **현장 밀착형 공감**: 의료통합봉사회, H-점프스쿨을 통한 취약계층 현장 문제 해결
-5. **유연한 실전 소통력**: TOEIC Speaking AL(160점), 부산국제영화제/피트니스센터 다국적·다연령 소통
-6. **신속한 프로토타이핑**: Python, Streamlit, MediaPipe, YOLO 기반 빠른 PoC 구현 및 검증
-
-### 2. Team Projects
-- **01. MediSore**: 비전 AI & ML 기반 욕창 예방 체위 코칭 및 욕창 관리 B2B SaaS
-  - [🎮 라이브 데모 직접 체험](https://ychae22.github.io/Medisore/) | [🌐 라이브 랜딩페이지 접속](https://ychae22.github.io/medisore-saas/) | [📁 GitHub / README](https://github.com/Ychae22/medisore-saas)
-  - 핵심 기술: MediaPipe 33개 관절 좌표 분석, NPUAP 4단계 판정, 7일 간호기록지 A4 PDF 자동 생성
-- **02. 힐링레터 (PA트라슈)**: ML 물리적 타건 리듬 분석 기반 파킨슨 조기 선별 및 보호자 안심 서비스
-  - 핵심 기술: Keystroke Dynamics Analysis, Random Forest 머신러닝, 시니어 고대비 UX
-- **03. Heimlich Hero**: 2020 대한응급의학회 가이드라인 고증 기반 리듬 액션 응급처치 교육 게임
-  - [📁 GitHub Repository](https://github.com/Ychae22/Heimlich-Hero)
-  - 핵심 기술: Pygame, BPM 연동 판정 엔진, 환자별(성인/영아/임산부) 프로토콜
-
-### 3. Individual Projects
-- **01. 환장연애 (EXChange)**: 서버리스 클라우드(BaaS) 기반 관계 폭력 조기 인지 및 신변 안전 구제 플랫폼
-  - [🌐 라이브 서비스 바로가기](https://ychae22.github.io/hwanjang-love/) | [📁 GitHub / README](https://github.com/Ychae22/hwanjang-love)
-  - 핵심 기술: Supabase (PostgreSQL), 무로그인 실시간 익명 게시판, 24시 긴급 안심 핫라인 & 퀵 엑시트 위장 모드
-- **02. 멜라노 체크 (MelanoCheck)**: 지식 증류(Knowledge Distillation) VLM 기반 피부암 다중 모달 진단 리포트 자동 생성 플랫폼
-  - [🌐 라이브 데모 바로가기](https://ychae22.github.io/skin-cancer-report/) | [📁 GitHub / README](https://github.com/Ychae22/skin-cancer-report)
-  - 논문 구현: *Automated Skin Cancer Report Generation via a Knowledge-Distilled Vision-Language Model* (IEEE Access 2025)
-  - 핵심 기술: 2-Stage KD VLM, BioMedCLIP (RAG), Mackie 7-Point Checklist 자동 정량 분석, 3-Tier 환자/의사 리포트
-- **03. ME:BE ATELIER (미:비 아뜰리에)**: 도달가능미(ME) 와 추구미(BE)의 간극 줄이기 | 30일 맞춤형 외형 솔루션 하이엔드 뷰티테크 &amp; 웰니스 플랫폼
-  - [🌐 라이브 서비스 바로가기](https://ychae22.github.io/mebe/) | [📁 GitHub / README](https://github.com/Ychae22/mebe)
-  - 핵심 기술: React 18, Vite 5, Tailwind CSS 3.4 (Strict B&amp;W High-End Editorial System 적용), Lucide React, HTML5 Canvas 2D API, Horizontal Edge Intensity 랜드마크 자동 검출, 안면 3분할 황금비율 및 중안부 비율(midRatio), 하악각 슬림 각도(atan2), 좌우 대칭도 분석
+### ⚡ 01. FEATURED: D2C 브랜드 매니지먼트 (더퓨처 헬스케어팀 실무)
+- **[칼로 (calo)] EMS 슬림코어 벨트 CRM 히든 프로모션 & 과재고 턴어라운드**
+  - **문제 정의**: 구 주력 벨트 판매 정체 및 물류비 적체 부담
+  - **데이터 분석**: 2030 스트레이트 체형 숏폼 바이럴 데이터 분석 ➔ '360° 집중 공략' 차별 소구(USP) 도출
+  - **전략 및 원가**: VVIP 시크릿 초대장 컨셉, 정상가 대비 56% 특가(사은품 분리 증정으로 원가율 방어), 긴급성 퍼널 설계
+- **[테트라큐어] 그린클렌즈 악타로스-X 가을 프로모션 기획 & 타깃 원가율 설계**
+  - **전략**: '가을 니트핏 아랫배 비움 플랜' 컨셉 및 카피라이팅
+  - **원가 구조화**: 10%대 중후반 타깃 원가율 가이드 준수 (1박스 9.93% ~ 4박스 16.51%) 및 공구가 하한선 보호
+  - **실행**: 피그마 썸네일 및 상세페이지 와이어프레임 기획안 작성
+- **[패칫 (patch!t)] 슬림잇 15만 개 과재고 소진을 위한 카테고리 리포지셔닝**
+  - **문제 정의**: 다이어트 패치 카테고리 한계 및 광고 피로도로 인한 지표 급락
+  - **피봇 전략**: 다이어트 ➔ '해외 젠지(Gen-Z) 바디 데코 & 러닝 라이프스타일'로 카테고리 리포지셔닝
+  - **미디어믹스**: 3단계(유튜브 정보형 침투 ➔ 인스타 매거진 대세감 ➔ 도심 5대 러닝크루 현장 시딩)
 
 ---
 
-## 🌐 GitHub Pages 배포 방법
+### 🏥 02. 디지털 헬스케어 B2B & B2C 비즈니스 모델링 (Business Model Canvas)
+- **MediSore (실시간 욕창 예방 체위 코칭 B2B SaaS)**
+  - **Target**: B2B 요양병원 및 간호간병통합 병동 (간호 인력 부족 기관)
+  - **Value Proposition**: 2시간 체위 변경 규정 준수 100%, 간호기록지 작성 시간 70% 단축, 의료분쟁 방지
+  - **Revenue Model**: 병상수 비례 월간 B2B SaaS 구독료 + IoT 스마트 매트리스 제휴 패키지
+- **힐링레터 (물리적 타건 리듬 활용 파킨슨 조기 선별 B2C 서비스)**
+  - **Target**: 파킨슨 고위험군(6080) 부모를 둔 3050 직장인 자녀
+  - **Value Proposition**: 병원 검진 거부감 없는 일상 안부 문자 기반 비침습적 조기 선별
+  - **Revenue Model**: 프리미엄 안심 월간 건강 리포트 구독료 + 대학병원 검진 연계 수수료
+- **ME:BE ATELIER (청담 프라이빗 에스테틱 큐레이션 & 30일 컨설팅 로드맵)**
+  - **Target**: 무분별한 공장형 시술에 피로감을 느끼고 1:1 조화를 찾는 2030 여성
+  - **Value Proposition**: 황금비 안면 계측 기반 '도달가능미(ME)' 정밀 진단 & 30일 솔루션
+  - **Revenue Model**: 정밀 진단 리포트 유료 판매 + 청담 VIP 에스테틱 제휴 수수료
+- **Heimlich Hero / 피부암 AI 진단 보고서 / 환장연애**
+  - 응급처치 에듀테크 라이선스 모델 및 헬스케어 버티컬 플랫폼 기획
 
-상세 배포 절차는 [DEPLOY_GUIDE.md](DEPLOY_GUIDE.md) 문서를 참고해 주세요.
+---
+
+## 🛠️ BM Competencies & Toolkit
+
+- **Brand Strategy**: BMC 비즈니스 모델 캔버스, 타깃 원가율(P&L) 산정, 프로모션 설계, 카테고리 리포지셔닝, 인플루언서 공구 로드맵
+- **Data & Research**: 키워드 검색량 및 인구통계 쿼리 분석, 스니핏(Snippet) 숏폼 트렌드 분석, 퍼널 데이터 분석, Google Sheets
+- **Design & Tools**: Figma (상세페이지/UI 기획), Notion (회의록/KPT 회고), 사방넷/ERP, Python
+
+---
+
+## 📬 Contact
+
+- **Email**: yujins2chae@gmail.com
+- **Phone**: 010-8918-8342
+- **GitHub**: https://github.com/ychae22
