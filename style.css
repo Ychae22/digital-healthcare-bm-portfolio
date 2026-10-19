@@ -1,13 +1,13 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 :root {
-  --primary-navy: #0A2D5A;
-  --medical-blue: #0D5AA7;
-  --accent-gold: #FFCC00;
-  --accent-light-gold: #FFF382;
+  --primary-navy: #0A192F;
+  --medical-blue: #0A192F;
+  --accent-gold: #FBDD3E;
+  --accent-light-gold: #FEEA76;
   --bg-slate: #F8FAFC;
   --card-bg: #FFFFFF;
-  --text-dark: #1E293B;
+  --text-dark: #0A192F;
   --text-muted: #64748B;
   --border-light: #E2E8F0;
 }
@@ -32,39 +32,45 @@ body {
   background: #F1F5F9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: #0A192F;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: #1E293B;
 }
 
-/* Glassmorphism */
-.glass-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+/* 100% Solid Navigation (투명함 없는 찐네이비 + 찐노랑 포인트 라인) */
+.glass-nav, .solid-nav {
+  background: #0A192F !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 3px solid #FBDD3E !important;
 }
 
-.glass-nav {
-  background: rgba(10, 45, 90, 0.94);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+/* 100% Solid Cards (투명함 및 블러 제거, 선명한 솔리드 카드) */
+.glass-card, .solid-card {
+  background: #FFFFFF !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 4px 14px rgba(10, 25, 47, 0.07);
 }
 
-.gradient-navy {
-  background: linear-gradient(135deg, #0A2D5A 0%, #0D5AA7 60%, #1772CD 100%);
+/* Solid Deep Navy Header/Banner */
+.gradient-navy, .solid-navy {
+  background: #0A192F !important;
 }
 
 .badge-gold {
-  background-color: #FFCC00;
-  color: #093D72;
-  font-weight: 700;
+  background-color: #FBDD3E !important;
+  color: #0A192F !important;
+  font-weight: 800;
 }
 
 .badge-blue {
-  background-color: #EBF3FA;
-  color: #0D5AA7;
+  background-color: #E2E8F0 !important;
+  color: #0A192F !important;
+  font-weight: 700;
 }
 
 /* Hover effects */
@@ -73,7 +79,7 @@ body {
 }
 .hover-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 32px -8px rgba(13, 90, 167, 0.15);
+  box-shadow: 0 16px 32px -8px rgba(10, 25, 47, 0.14);
 }
 
 /* Image zoom on hover */
@@ -142,7 +148,7 @@ body {
     background: white;
     color: black;
   }
-  .glass-card {
+  .glass-card, .solid-card {
     border: 1px solid #ccc;
     box-shadow: none;
   }
