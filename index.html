@@ -92,51 +92,59 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       
       <!-- Brand Logo -->
-      <a href="#hero" class="flex items-center space-x-3 text-white group">
-        <div class="w-9 h-9 rounded-lg bg-brand-gold text-brand-navy font-black flex items-center justify-center text-lg shadow-md group-hover:scale-105 transition-transform">
+      <a href="#hero" class="flex items-center space-x-3 text-slate-900 group">
+        <div class="w-9 h-9 rounded-lg bg-amber-400 text-slate-950 font-black flex items-center justify-center text-lg shadow-sm group-hover:scale-105 transition-transform">
           CY
         </div>
         <div>
-          <span class="font-bold text-base tracking-tight block leading-tight">채유진</span>
-          <span class="text-[11px] text-amber-300 font-medium tracking-wider uppercase">Healthcare & E-Commerce MD</span>
+          <span class="font-bold text-base tracking-tight block leading-tight text-slate-950">채유진</span>
+          <span class="text-[11px] text-amber-700 font-bold tracking-wider uppercase">Healthcare & E-Commerce MD</span>
         </div>
       </a>
 
       <!-- Desktop Nav Menu -->
-      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm text-slate-200">
-        <a href="#hero" class="px-3 py-2 rounded-md hover:text-white hover:bg-white/10 transition-colors">소개</a>
-        <a href="#journey" class="px-3 py-2 rounded-md hover:text-white hover:bg-white/10 transition-colors">성장 로드맵</a>
-        <a href="#competencies" class="px-3 py-2 rounded-md hover:text-white hover:bg-white/10 transition-colors">핵심역량</a>
-        <a href="#profile" class="px-3 py-2 rounded-md hover:text-white hover:bg-white/10 transition-colors">프로필 & 이력</a>
-        <a href="#team-projects" class="px-3 py-2 rounded-md hover:text-white hover:bg-white/10 transition-colors">팀 프로젝트</a>
-        <a href="#individual-projects" class="px-3 py-2 rounded-md hover:text-white hover:bg-white/10 transition-colors">개인 프로젝트</a>
-        <a href="#contact" class="px-3 py-2 rounded-md hover:text-white hover:bg-white/10 transition-colors">연락처</a>
+      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm text-slate-700 font-medium">
+        <a href="#hero" class="px-3 py-2 rounded-md hover:text-amber-800 hover:bg-amber-50 transition-colors">소개</a>
+        <a href="#journey" class="px-3 py-2 rounded-md hover:text-amber-800 hover:bg-amber-50 transition-colors">성장 로드맵</a>
+        <a href="#competencies" class="px-3 py-2 rounded-md hover:text-amber-800 hover:bg-amber-50 transition-colors">핵심역량</a>
+        <a href="#profile" class="px-3 py-2 rounded-md hover:text-amber-800 hover:bg-amber-50 transition-colors">프로필 & 이력</a>
+        <a href="#team-projects" class="px-3 py-2 rounded-md hover:text-amber-800 hover:bg-amber-50 transition-colors">팀 프로젝트</a>
+        <a href="#individual-projects" class="px-3 py-2 rounded-md hover:text-amber-800 hover:bg-amber-50 transition-colors">개인 프로젝트</a>
+        <a href="#contact" class="px-3 py-2 rounded-md hover:text-amber-800 hover:bg-amber-50 transition-colors">연락처</a>
       </nav>
 
       <!-- Action Buttons -->
       <div class="flex items-center space-x-2 sm:space-x-3">
         <!-- Presentation Mode Toggle -->
-        <button id="toggleSlideDeckBtn" class="flex items-center space-x-1.5 bg-brand-gold hover:bg-amber-400 text-brand-navy font-bold text-xs sm:text-sm px-3.5 py-2 rounded-lg shadow transition-all hover:scale-105" title="원본 PPT 슬라이드 모드로 감상하기">
+        <button onclick="window.print()" class="flex items-center space-x-1.5 bg-white hover:bg-amber-50 text-slate-800 font-bold text-xs sm:text-sm px-3 py-2 rounded-lg border border-slate-300 hover:border-amber-400 shadow-xs transition-all" title="면접관 제출용 또는 소장용 인쇄 / PDF 저장">
+          <i data-lucide="printer" class="w-4 h-4 text-amber-600"></i>
+          <span>인쇄 / PDF</span>
+        </button>
+        <button id="toggleSlideDeckBtn" class="flex items-center space-x-1.5 bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs sm:text-sm px-3.5 py-2 rounded-lg shadow-sm transition-all hover:scale-105" title="원본 PPT 슬라이드 모드로 감상하기">
           <i data-lucide="presentation" class="w-4 h-4"></i>
           <span>슬라이드 발표 모드</span>
         </button>
 
         <!-- Mobile Menu Toggle -->
-        <button id="mobileMenuBtn" class="md:hidden text-white p-2 rounded-md hover:bg-white/10" aria-label="메뉴 열기">
+        <button id="mobileMenuBtn" class="md:hidden text-slate-800 p-2 rounded-md hover:bg-slate-100" aria-label="메뉴 열기">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-brand-navy border-b border-white/10 px-4 pt-2 pb-4 space-y-1 text-sm text-slate-200">
-      <a href="#hero" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-white/10">소개</a>
-      <a href="#journey" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-white/10">성장 로드맵</a>
-      <a href="#competencies" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-white/10">핵심역량</a>
-      <a href="#profile" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-white/10">프로필 & 이력</a>
-      <a href="#team-projects" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-white/10">팀 프로젝트</a>
-      <a href="#individual-projects" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-white/10">개인 프로젝트</a>
-      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-white/10">연락처</a>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-amber-300 px-4 pt-2 pb-4 space-y-1 text-sm text-slate-800 shadow-md">
+      <a href="#hero" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-800 font-medium">소개</a>
+      <a href="#journey" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-800 font-medium">성장 로드맵</a>
+      <a href="#competencies" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-800 font-medium">핵심역량</a>
+      <a href="#profile" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-800 font-medium">프로필 & 이력</a>
+      <a href="#team-projects" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-800 font-medium">팀 프로젝트</a>
+      <a href="#individual-projects" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-800 font-medium">개인 프로젝트</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-800 font-medium">연락처</a>
+      <button onclick="window.print()" class="w-full text-left px-3 py-2 rounded-md bg-amber-50 text-amber-900 font-bold flex items-center space-x-2 mt-2">
+        <i data-lucide="printer" class="w-4 h-4 text-amber-600"></i>
+        <span>인쇄 / PDF 저장</span>
+      </button>
     </div>
   </header>
 
@@ -146,7 +154,9 @@
   <main id="portfolioView" class="pt-16">
 
     <!-- 1. HERO SECTION (Slide 1 & Slide 3 Combined) -->
-    <section id="hero" class="relative gradient-navy text-white py-20 sm:py-28 overflow-hidden">
+    <section id="hero" class="relative bg-gradient-to-b from-amber-50/70 via-white to-slate-50 text-slate-900 py-16 sm:py-24 border-b border-slate-200 overflow-hidden">
+      <!-- Background Ambient Pattern (Very Subtle) -->
+      <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
       <!-- Background Ambient Glows -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -154,59 +164,59 @@
           <!-- Left Main Introduction -->
           <div class="lg:col-span-7 space-y-6 text-left">
 
-            <div class="inline-flex items-center space-x-2 bg-brand-gold text-brand-navy font-black text-xs sm:text-sm px-4 py-1.5 rounded-full shadow-md uppercase tracking-wider">
+            <div class="inline-flex items-center space-x-2 bg-amber-400 text-slate-950 font-black text-xs sm:text-sm px-4 py-1.5 rounded-full shadow-sm uppercase tracking-wider">
               <i data-lucide="sparkles" class="w-4 h-4"></i>
               <span>WELLNESS & E-COMMERCE MD</span>
             </div>
 
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight text-white break-keep">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight text-slate-950 break-keep">
               원료의 본질을 읽고 고객의 선택으로 연결하는<br class="hidden sm:inline" />
-              웰니스 MD <span class="text-brand-gold">채유진</span>입니다.
+              웰니스 MD <span class="text-amber-600 underline decoration-amber-400 decoration-wavy underline-offset-4">채유진</span>입니다.
             </h1>
 
-            <p class="text-base sm:text-lg text-slate-200 font-medium leading-relaxed max-w-xl break-keep">
+            <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-xl break-keep">
               기능성 원료의 차별점을 고객의 언어로 풀어내고, 데이터 분석과 손익 구조화로 비즈니스의 지속 가능한 성장을 설계합니다.
             </p>
             <!-- Key Quick Info Chips -->
             <div class="pt-2 flex flex-wrap gap-2.5 text-xs sm:text-sm">
-              <div class="flex items-center space-x-2 bg-[#112240] px-3.5 py-1.5 rounded-xl border border-[#233554] text-slate-100">
-                <i data-lucide="mail" class="w-4 h-4 text-brand-gold"></i>
+              <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-xl border border-slate-200 text-slate-800 shadow-xs hover:border-amber-400 transition-all">
+                <i data-lucide="mail" class="w-4 h-4 text-amber-500"></i>
                 <span>yujins2chae@gmail.com</span>
-                <button onclick="copyToClipboard('yujins2chae@gmail.com', '이메일 주소가 복사되었습니다!')" class="ml-1 text-slate-300 hover:text-white" title="복사">
+                <button onclick="copyToClipboard('yujins2chae@gmail.com', '이메일 주소가 복사되었습니다!')" class="ml-1 text-slate-400 hover:text-amber-600" title="복사">
                   <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                 </button>
               </div>
-              <div class="flex items-center space-x-2 bg-[#112240] px-3.5 py-1.5 rounded-xl border border-[#233554] text-slate-100">
-                <i data-lucide="phone" class="w-4 h-4 text-brand-gold"></i>
+              <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-xl border border-slate-200 text-slate-800 shadow-xs hover:border-amber-400 transition-all">
+                <i data-lucide="phone" class="w-4 h-4 text-amber-500"></i>
                 <span>010-8918-8342</span>
-                <button onclick="copyToClipboard('010-8918-8342', '전화번호가 복사되었습니다!')" class="ml-1 text-slate-300 hover:text-white" title="복사">
+                <button onclick="copyToClipboard('010-8918-8342', '전화번호가 복사되었습니다!')" class="ml-1 text-slate-400 hover:text-amber-600" title="복사">
                   <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                 </button>
               </div>
-              <a href="https://github.com/ychae22" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-[#112240] hover:bg-[#1a3258] px-3.5 py-1.5 rounded-xl border border-[#233554] transition-all text-brand-gold hover:text-amber-300">
+              <a href="https://github.com/ychae22" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-white hover:bg-amber-50 px-3.5 py-1.5 rounded-xl border border-slate-200 text-slate-800 hover:text-amber-700 hover:border-amber-400 shadow-xs transition-all font-medium">
                 <i data-lucide="github" class="w-4 h-4"></i>
                 <span>github.com/ychae22</span>
                 <i data-lucide="external-link" class="w-3 h-3 ml-0.5"></i>
               </a>
-              <div class="flex items-center space-x-2 bg-[#112240] hover:bg-[#1a3258] px-3.5 py-1.5 rounded-xl border border-amber-400/40 text-amber-300 font-semibold cursor-pointer transition-all shadow-sm" onclick="openLightbox('google_analytics_certificate_latest.png', 'Google Analytics (GA4) Certification - 구글 공인 자격증 (채유진)')" title="클릭 시 자격증 원본 확인">
-                <i data-lucide="award" class="w-4 h-4 text-brand-gold"></i>
+              <div class="flex items-center space-x-2 bg-amber-50 hover:bg-amber-100 px-3.5 py-1.5 rounded-xl border border-amber-300 text-amber-900 font-bold cursor-pointer transition-all shadow-xs" onclick="openLightbox('google_analytics_certificate_latest.png', 'Google Analytics (GA4) Certification - 구글 공인 자격증 (채유진)')" title="클릭 시 자격증 원본 확인">
+                <i data-lucide="award" class="w-4 h-4 text-amber-500"></i>
                 <span>GA4 공인 자격증</span>
                 <i data-lucide="external-link" class="w-3 h-3 ml-0.5"></i>
               </div>
-              <div class="flex items-center space-x-2 bg-[#112240] px-3.5 py-1.5 rounded-xl border border-[#233554] text-slate-100">
-                <i data-lucide="map-pin" class="w-4 h-4 text-brand-gold"></i>
+              <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-xl border border-slate-200 text-slate-800 shadow-xs hover:border-amber-400 transition-all">
+                <i data-lucide="map-pin" class="w-4 h-4 text-amber-500"></i>
                 <span>Seoul, Korea</span>
               </div>
             </div>
 
             <!-- Action CTAs -->
             <div class="pt-4 flex flex-wrap gap-3.5">
-              <a href="#d2c-bm" class="inline-flex items-center space-x-2 bg-brand-gold hover:bg-amber-400 text-brand-navy font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              <a href="#d2c-bm" class="inline-flex items-center space-x-2 bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition-all hover:scale-105">
                 <i data-lucide="zap" class="w-4 h-4"></i>
                 <span>이커머스 & MD 실무 성과 보기</span>
               </a>
-              <a href="#competencies" class="inline-flex items-center space-x-2 bg-white/15 hover:bg-white/25 text-white font-semibold px-6 py-3 rounded-xl border border-white/20 transition-all">
-                <i data-lucide="award" class="w-4 h-4"></i>
+              <a href="#competencies" class="inline-flex items-center space-x-2 bg-white hover:bg-slate-50 text-slate-800 font-semibold px-6 py-3 rounded-xl border border-slate-300 transition-all shadow-xs">
+                <i data-lucide="award" class="w-4 h-4 text-amber-600"></i>
                 <span>MD 핵심 역량 보기</span>
               </a>
             </div>
@@ -216,27 +226,27 @@
           <div class="lg:col-span-5">
             <div class="solid-card rounded-2xl p-6 sm:p-7 text-slate-900 shadow-xl border border-slate-200 relative overflow-hidden bg-white">
               <div class="flex items-center justify-between pb-3 border-b border-slate-100">
-                <span class="inline-block px-3 py-1 bg-brand-gold text-brand-navy text-xs font-black rounded-lg tracking-wider">MERCHANDISING FOCUS</span>
+                <span class="inline-block px-3 py-1 bg-amber-100 text-amber-900 border border-amber-300 text-xs font-black rounded-lg tracking-wider">MERCHANDISING FOCUS</span>
                 <span class="text-xs text-slate-500 font-bold">2026 MD PORTFOLIO</span>
               </div>
 
               <div class="py-4 space-y-3.5">
-                <div class="bg-brand-navy text-white p-4.5 rounded-xl text-center shadow border border-slate-700">
-                  <span class="text-[11px] uppercase tracking-widest text-amber-300 font-semibold block">STRATEGIC PILLARS</span>
-                  <h3 class="text-xl font-black mt-1 tracking-tight">DATA & PROFITABILITY</h3>
-                  <p class="text-xs text-blue-100 mt-1">원가율·손익 구조 설계와 시장 데이터 기반 세일즈 부스팅</p>
+                <div class="bg-amber-50/90 text-slate-900 p-4.5 rounded-xl text-center border-2 border-amber-300 shadow-xs">
+                  <span class="text-[11px] uppercase tracking-widest text-amber-700 font-bold block">STRATEGIC PILLARS</span>
+                  <h3 class="text-xl font-black mt-1 tracking-tight text-slate-950">DATA & PROFITABILITY</h3>
+                  <p class="text-xs text-slate-600 font-medium mt-1">원가율·손익 구조 설계와 시장 데이터 기반 세일즈 부스팅</p>
                 </div>
 
                 <div class="grid grid-cols-2 gap-3 pt-1">
                   <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-left">
-                    <div class="flex items-center space-x-1.5 text-brand-blue font-bold text-xs">
+                    <div class="flex items-center space-x-1.5 text-slate-900 font-bold text-xs">
                       <i data-lucide="dna" class="w-4 h-4 text-indigo-600"></i>
                       <span>Domain & Product</span>
                     </div>
                     <p class="text-[11px] text-slate-600 mt-1 leading-snug">부산대 분자생물학 학사<br />원료 기전 분석 & 고기능성 상품 소싱</p>
                   </div>
                   <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-left">
-                    <div class="flex items-center space-x-1.5 text-brand-blue font-bold text-xs">
+                    <div class="flex items-center space-x-1.5 text-slate-900 font-bold text-xs">
                       <i data-lucide="bar-chart-3" class="w-4 h-4 text-emerald-600"></i>
                       <span>Data & Economics</span>
                     </div>
@@ -349,7 +359,7 @@
             <div class="pt-4 mt-6 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
               <div class="flex items-center space-x-2">
                 <button onclick="openLightbox('morescience_certificate.png', '주식회사 모어사이언스 인턴 수료증 (고용노동부 주관 미래내일일경험 사업)')" class="inline-flex items-center space-x-1.5 px-4 py-2 bg-brand-navy hover:bg-brand-blue text-white rounded-xl text-xs font-bold transition-all shadow-sm">
-                  <i data-lucide="award" class="w-4 h-4 text-brand-gold"></i>
+                  <i data-lucide="award" class="w-4 h-4 text-amber-500"></i>
                   <span>공인 수료증 보기</span>
                 </button>
                 <a href="morescience_certificate.pdf" target="_blank" class="px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-semibold transition-colors flex items-center space-x-1" title="PDF 원본 열기">
@@ -759,7 +769,7 @@
                   </p>
                   <div class="mt-2.5 flex items-center space-x-2">
                     <button onclick="openLightbox('morescience_certificate.png', '주식회사 모어사이언스 인턴 수료증 (고용노동부 주관 미래내일일경험 사업)')" class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-brand-navy hover:bg-brand-blue text-white rounded-lg font-semibold text-xs transition-colors shadow-xs">
-                      <i data-lucide="award" class="w-3.5 h-3.5 text-brand-gold"></i>
+                      <i data-lucide="award" class="w-3.5 h-3.5 text-amber-500"></i>
                       <span>수료증 확인하기</span>
                     </button>
                     <a href="morescience_certificate.pdf" target="_blank" class="inline-flex items-center space-x-1 px-2.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs transition-colors" title="PDF 원본 열기">
@@ -845,7 +855,7 @@
                   <span class="text-amber-800 font-extrabold text-[11px] mt-0.5 block">데이터 분석 자격 취득</span>
                   </div>
                   <button onclick="openLightbox('google_analytics_certificate_latest.png', 'Google Analytics (GA4) Certification - 구글 공인 자격증 (채유진)')" class="px-2.5 py-1.5 bg-brand-navy hover:bg-brand-blue text-white rounded-lg font-semibold text-[11px] transition-colors flex items-center space-x-1 shadow-xs" title="자격증 이미지 확인">
-                    <i data-lucide="award" class="w-3.5 h-3.5 text-brand-gold"></i>
+                    <i data-lucide="award" class="w-3.5 h-3.5 text-amber-500"></i>
                     <span>?먭꺽利?蹂닿린</span>
                   </button>
                 </div>
@@ -877,7 +887,7 @@
 
             <!-- Quick Contact Box -->
             <div class="bg-gradient-to-br from-brand-navy to-brand-blue text-white rounded-2xl p-6 shadow-md space-y-3">
-              <h4 class="font-bold text-sm text-brand-gold flex items-center space-x-1.5">
+              <h4 class="font-bold text-sm text-amber-500 flex items-center space-x-1.5">
                 <i data-lucide="send" class="w-4 h-4"></i>
                 <span>GET IN TOUCH</span>
               </h4>
@@ -1885,67 +1895,67 @@
     </section>
 
     <!-- 6. OUTRO & CONTACT SECTION (Slide 10) -->
-    <section id="contact" class="py-24 gradient-navy text-white text-center relative overflow-hidden">
-      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <section id="contact" class="py-20 sm:py-24 bg-gradient-to-t from-amber-50/80 via-white to-slate-50 text-slate-900 text-center relative overflow-hidden border-t border-slate-200">
+      <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
       
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
         
-        <div class="inline-block px-4 py-1 rounded-full bg-brand-gold text-brand-navy font-black text-xs uppercase tracking-widest shadow">
+        <div class="inline-block px-4 py-1.5 rounded-full bg-amber-400 text-slate-950 font-black text-xs uppercase tracking-widest shadow-sm">
           THANK YOU
         </div>
 
-        <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-slate-950 leading-tight">
           고객이 먼저 찾는 새로운 웰니스의<br />
           기준을 세워가겠습니다.
         </h2>
 
-        <p class="text-lg sm:text-xl text-slate-200 font-medium">
+        <p class="text-lg sm:text-xl text-slate-600 font-medium">
           채유진 | Wellness & E-Commerce MD
         </p>
 
         <!-- Contact Box -->
-        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 max-w-xl mx-auto border border-white/20 space-y-4">
-          <div class="flex items-center justify-between p-3 bg-white/10 rounded-xl">
+        <div class="bg-white rounded-2xl p-6 sm:p-8 max-w-xl mx-auto border border-slate-200 shadow-lg space-y-4">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
             <div class="flex items-center space-x-3 text-left">
-              <i data-lucide="phone" class="w-5 h-5 text-brand-gold"></i>
+              <i data-lucide="phone" class="w-5 h-5 text-amber-500"></i>
               <div>
-                <span class="text-[11px] text-slate-300 block">Phone</span>
+                <span class="text-[11px] text-slate-500 font-semibold block">Phone</span>
                 <span class="font-bold text-sm">010-8918-8342</span>
               </div>
             </div>
-            <button onclick="copyToClipboard('010-8918-8342', '전화번호가 복사되었습니다!')" class="px-3 py-1.5 bg-brand-gold text-brand-navy font-bold text-xs rounded-lg hover:bg-amber-400 transition-colors">
+            <button onclick="copyToClipboard('010-8918-8342', '전화번호가 복사되었습니다!')" class="px-3.5 py-1.5 bg-amber-400 text-slate-950 font-bold text-xs rounded-lg hover:bg-amber-500 transition-colors shadow-xs">
               복사
             </button>
           </div>
 
-          <div class="flex items-center justify-between p-3 bg-white/10 rounded-xl">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
             <div class="flex items-center space-x-3 text-left">
-              <i data-lucide="mail" class="w-5 h-5 text-brand-gold"></i>
+              <i data-lucide="mail" class="w-5 h-5 text-amber-500"></i>
               <div>
-                <span class="text-[11px] text-slate-300 block">Email</span>
+                <span class="text-[11px] text-slate-500 font-semibold block">Email</span>
                 <span class="font-bold text-sm">yujins2chae@gmail.com</span>
               </div>
             </div>
-            <button onclick="copyToClipboard('yujins2chae@gmail.com', '이메일 주소가 복사되었습니다!')" class="px-3 py-1.5 bg-brand-gold text-brand-navy font-bold text-xs rounded-lg hover:bg-amber-400 transition-colors">
+            <button onclick="copyToClipboard('yujins2chae@gmail.com', '이메일 주소가 복사되었습니다!')" class="px-3.5 py-1.5 bg-amber-400 text-slate-950 font-bold text-xs rounded-lg hover:bg-amber-500 transition-colors shadow-xs">
               복사
             </button>
           </div>
 
-          <div class="flex items-center justify-between p-3 bg-white/10 rounded-xl">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
             <div class="flex items-center space-x-3 text-left">
-              <i data-lucide="github" class="w-5 h-5 text-brand-gold"></i>
+              <i data-lucide="github" class="w-5 h-5 text-amber-500"></i>
               <div>
-                <span class="text-[11px] text-slate-300 block">GitHub</span>
+                <span class="text-[11px] text-slate-500 font-semibold block">GitHub</span>
                 <span class="font-bold text-sm">github.com/ychae22</span>
               </div>
             </div>
-            <a href="https://github.com/ychae22" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 bg-white/20 text-white font-bold text-xs rounded-lg hover:bg-white/30 transition-colors">
+            <a href="https://github.com/ychae22" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-slate-900 text-white font-bold text-xs rounded-lg hover:bg-slate-800 transition-colors shadow-xs">
               방문
             </a>
           </div>
         </div>
 
-        <div class="pt-6 text-xs text-slate-400">
+        <div class="pt-6 text-xs text-slate-500 font-medium">
           © 2026 Chae Yujin. All rights reserved. Powered by GitHub Pages.
         </div>
 
@@ -1962,16 +1972,16 @@
     <!-- Top Control Bar -->
     <div class="h-14 bg-slate-900 border-b border-slate-800 px-4 sm:px-8 flex items-center justify-between text-xs sm:text-sm">
       <div class="flex items-center space-x-3">
-        <span class="font-bold text-brand-gold uppercase tracking-wider">채유진 디지털 헬스케어 포트폴리오</span>
+        <span class="font-bold text-amber-500 uppercase tracking-wider">채유진 디지털 헬스케어 포트폴리오</span>
         <span class="text-slate-500">|</span>
-        <span id="slideIndicator" class="font-mono text-slate-300">Slide 1 / 10</span>
+        <span id="slideIndicator" class="font-mono text-slate-500 font-semibold">Slide 1 / 10</span>
       </div>
 
       <div class="flex items-center space-x-2">
-        <button id="prevSlideTopBtn" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-300">
+        <button id="prevSlideTopBtn" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-500 font-semibold">
           <i data-lucide="chevron-left" class="w-4 h-4 inline"></i> 이전
         </button>
-        <button id="nextSlideTopBtn" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-300">
+        <button id="nextSlideTopBtn" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-500 font-semibold">
           다음 <i data-lucide="chevron-right" class="w-4 h-4 inline"></i>
         </button>
         <button id="exitSlideDeckBtn" class="px-3 py-1.5 bg-rose-600/80 hover:bg-rose-600 text-white font-bold rounded-lg ml-2">
@@ -1993,7 +2003,7 @@
           <div class="space-y-4">
             <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black leading-tight text-white">
               원료의 본질을 읽고 고객의 선택으로 연결하는<br />
-              웰니스 MD <span class="text-brand-gold">채유진</span>입니다
+              웰니스 MD <span class="text-amber-500">채유진</span>입니다
             </h2>
             <p class="text-sm sm:text-lg text-amber-200 font-semibold tracking-wider">CHAE YUJIN PORTFOLIO</p>
           </div>
@@ -2116,7 +2126,7 @@
             <span class="text-xs font-mono text-blue-200">SLIDE 04</span>
           </div>
           <div class="space-y-4">
-            <span class="text-5xl font-black text-brand-gold">01</span>
+            <span class="text-5xl font-black text-amber-500">01</span>
             <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
               디지털 헬스케어 프로젝트<br />
               기획 & 기술 구현
